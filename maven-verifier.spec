@@ -1,6 +1,6 @@
 Name:           maven-verifier
 Version:        1.4
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Maven verifier
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/maven-verifier
@@ -49,6 +49,9 @@ API documentation for %{name}.
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4-6
+- Mass rebuild 2013-12-27
+
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.4-5
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
