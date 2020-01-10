@@ -1,6 +1,6 @@
 Name:           maven-verifier
 Version:        1.4
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Maven verifier
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/maven-verifier
@@ -13,6 +13,7 @@ BuildArch:      noarch
 BuildRequires:  java-devel
 BuildRequires:  maven-local
 BuildRequires:  maven-surefire-provider-junit
+BuildRequires:  maven-shared
 BuildRequires:  maven-shared-utils
 
 Obsoletes:      maven-shared-verifier < %{version}-%{release}
@@ -49,6 +50,10 @@ API documentation for %{name}.
 
 
 %changelog
+* Fri Aug  1 2014 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.4-7
+- Add missing build-requires on maven-shared
+- Resolves: rhbz#1074932
+
 * Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.4-6
 - Mass rebuild 2013-12-27
 
